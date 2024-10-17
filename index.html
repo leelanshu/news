@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Gifting Section with Continuous Auto Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .gifting-wrapper {
+            overflow: hidden;
+            background-color: #f7d3e1; /* Light pink background */
+            padding: 10px 0;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .gifting-section {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll 25s linear infinite !important;
+        }
+        .gifting-section a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 40px;
+            font-size: 18px;
+        }
+        .gifting-section span {
+            color: #cc7b39; /* Brown color for the decorative icon */
+            font-size: 24px;
+            margin: 0 10px;
+        }
+
+        /* Keyframes for scrolling */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gifting-wrapper">
+        <div class="gifting-section">
+            <a href="#">19% P.A. Fixed return on investment + Dividend benefit also.</a>
+            <span class="separator">₹</span>
+            <a href="#">19% P.A. Fixed return</a>
+            <span class="separator">₹</span>
+            <a href="#">19% P.A. Fixed return on investment + Dividend benefit also.</a>
+            <span class="separator">₹</span>
+            <a href="#"> Every Successful Referral and Get 10% to 50% Life Time Earning.</a>
+            <span class="separator">₹</span>
+            <a href="#">19% P.A. Fixed return</a>
+        </div>
+    </div>
+
+</body>
+</html>
